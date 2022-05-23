@@ -68,7 +68,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form method="post" action="https://usebasin.com/f/e1dfa5ff88e8" enctype="multipart/form-data">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -88,6 +88,17 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
+								<script type="text/javascript" script src="https://cdn.jsdelivr.net/npm/ahoy.js@0.3.9/dist/ahoy.min.js" async defer onload="configureAhoy()">
+									function configureAhoy() {
+									  ahoy.configure({
+										visitsUrl: "https://usebasin.com/ahoy/visits",
+										eventsUrl: "https://usebasin.com/ahoy/events",
+										page: "e1dfa5ff88e8" /* Use your form id here */
+									  });
+									  ahoy.trackView();
+									  ahoy.trackSubmits();
+									}
+								  </script>
 								<ul class="icons">
 									<li><a href="https://www.linkedin.com/in/jamesonstickle/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/jamesonstickle" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
