@@ -17,18 +17,18 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
-<script type="text/javascript" script src="https://cdn.jsdelivr.net/npm/ahoy.js@0.3.9/dist/ahoy.min.js"
-					async defer onload="configureAhoy()">
-						function configureAhoy() {
-							ahoy.configure({
-								visitsUrl: "https://usebasin.com/ahoy/visits",
-								eventsUrl: "https://usebasin.com/ahoy/events",
-								page: "e1dfa5ff88e8" /* Use your form id here */
-							});
-							ahoy.trackView();
-							ahoy.trackSubmits();
-						}
-					</script>
+<script type="text/javascript">
+	function configureAhoy() {
+	  ahoy.configure({
+		visitsUrl: "https://usebasin.com/ahoy/visits",
+		eventsUrl: "https://usebasin.com/ahoy/events",
+		page: "e1dfa5ff88e8" /* Use your form id here */
+	  });
+	  ahoy.trackView();
+	  ahoy.trackSubmits();
+	}
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/ahoy.js@0.3.9/dist/ahoy.min.js" async defer onload="configureAhoy()"></script>
 <body class="is-preload">
 
 	<!-- Wrapper -->
